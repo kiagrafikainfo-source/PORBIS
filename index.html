@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portal Berita Sekolah</title>
+  <meta name="description" content="Portal informasi, berita, dan pengumuman sekolah.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">PS</span><span><b id="school-name">Portal Sekolah</b><small>Informasi • Prestasi • Inspirasi</small></span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Buka menu">☰</button>
+    <nav id="main-nav"><a class="active" href="index.html">Beranda</a><a href="#berita">Berita</a><a href="#pengumuman">Pengumuman</a><a href="#tentang">Tentang</a><a class="nav-login" href="login.html">Login Admin</a></nav>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div><span class="eyebrow">PORTAL INFORMASI RESMI</span><h1>Berita Sekolah,<br><em>Inspirasi Masa Depan.</em></h1><p>Temukan kabar terbaru, agenda, pengumuman, dan prestasi warga sekolah dalam satu portal informasi.</p><div class="hero-actions"><a class="btn btn-primary" href="#berita">Jelajahi Berita</a><a class="btn btn-light" href="#pengumuman">Lihat Pengumuman</a></div></div>
+      <div class="hero-art"><div class="art-orbit"></div><div class="art-card"><span>✦</span><b>Belajar.</b><b>Berkarya.</b><b>Berprestasi.</b><small>BERSAMA SEKOLAH KITA</small></div><div class="art-tag">#SekolahHebat</div></div>
+    </div>
+  </section>
+  <section class="stats container"><div><b id="stat-news">0</b><span>Berita diterbitkan</span></div><div><b id="stat-announcements">0</b><span>Pengumuman aktif</span></div><div><b>100%</b><span>Semangat berkarya</span></div></section>
+  <section class="section container" id="berita">
+    <div class="section-heading"><div><span class="eyebrow">KABAR TERKINI</span><h2>Berita Sekolah</h2><p>Informasi dan cerita terbaru dari lingkungan sekolah.</p></div><a class="text-link" href="#berita">Semua berita ↗</a></div>
+    <div class="toolbar"><input id="search-news" type="search" placeholder="Cari berita..." aria-label="Cari berita"><select id="category-filter"><option value="">Semua kategori</option></select></div>
+    <div id="news-list" class="news-grid"><div class="loading">Memuat berita...</div></div>
+  </section>
+  <section class="announcement-section" id="pengumuman"><div class="container"><div class="section-heading light-heading"><div><span class="eyebrow">JANGAN LEWATKAN</span><h2>Pengumuman</h2><p>Agenda dan informasi penting sekolah.</p></div></div><div id="announcement-list" class="announcement-grid"><div class="loading">Memuat pengumuman...</div></div></div></section>
+  <section class="about-section container" id="tentang"><div class="about-icon">✧</div><div><span class="eyebrow">TENTANG PORTAL</span><h2>Satu ruang untuk berbagi informasi.</h2><p>Portal Berita Sekolah menjadi media publikasi kegiatan, prestasi, agenda, dan pengumuman sekolah. Konten dikelola oleh admin atau petugas yang telah diberi akses.</p></div></section>
+</main>
+<footer><div class="container footer-wrap"><div><b id="footer-school">Portal Sekolah</b><p>Membangun generasi cerdas, kreatif, dan berkarakter.</p></div><div>© <span id="year"></span> Portal Berita Sekolah</div></div></footer>
+<script type="module" src="js/home.js"></script>
+</body></html>
